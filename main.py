@@ -1,5 +1,5 @@
-import pandas as pd
+from config.settings import KAGGLE_PATH,EXTRACT_PATH
+from extract.fetch_data import fetch_dataset
 
-data = pd.read_csv("data/population_data.csv",dtype='str', skiprows=4)
-
-print(data.head)
+if __name__ == "__main__":
+    fetch_dataset(kaggle_path=KAGGLE_PATH, extract_path=EXTRACT_PATH)
