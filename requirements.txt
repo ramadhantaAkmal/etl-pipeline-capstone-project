@@ -5,7 +5,7 @@ idna==3.10
 kaggle==1.7.4.5
 numpy==2.3.2
 pandas==2.3.2
-protobuf==6.32.1
+protobuf==6.32.0
 python-dateutil==2.9.0.post0
 python-slugify==8.0.4
 pytz==2025.2
