@@ -5,7 +5,10 @@ import charset_normalizer
 def extract_csv(path,skiprows) -> pd.DataFrame :
     return pd.read_csv(path,skiprows=skiprows)
     
-def extract_data_to_df(path: str, key_columns:list[str], skip_line = 0) :  
+def extract_data_to_df(path: str, key_columns:list[str], skip_line = 0) :
+    """
+        Extract multiple csv data into list of dataframe
+    """
     files = glob.glob(f'{path}/*.csv')
 
     df_list:list[pd.DataFrame] = []

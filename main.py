@@ -7,6 +7,7 @@ from datetime import date
 
 if __name__ == "__main__":
     #Extract data
+    print("Extracting data...")
     today = date.today()
     
     extract_dir = f"{EXTRACT_PATH}/{today}-world-bank-dataset"
@@ -20,10 +21,12 @@ if __name__ == "__main__":
     transformed_df_list = list(map(to_long_format,df_list))
     
     #Transform data
+    print("Transforming data...")
     key_columns_transform = ['Country_Code','Country_Name', 'Year']
     merged_df = merge_df_list(transformed_df_list, key_columns=key_columns_transform, how='inner')
     
     #Load data
+    print("Load data...")
     merged_df.to_csv(f"{LOAD_PATH}/{today}-world_development.csv")
     
     

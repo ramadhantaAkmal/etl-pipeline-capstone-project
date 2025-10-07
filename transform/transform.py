@@ -1,6 +1,9 @@
 import pandas as pd
 
 def to_long_format(df:pd.DataFrame) -> pd.DataFrame:
+    """
+        Convert a wide formatted dataframe into long formatted dataframe
+    """
     df.drop('Unnamed: 62', axis=1, inplace=True)
     value_name = f'{df['Indicator Name'][0]}({df['Indicator Code'][0]})'
     dt = df.drop(columns=['Indicator Name', 'Indicator Code'])
@@ -12,6 +15,9 @@ def to_long_format(df:pd.DataFrame) -> pd.DataFrame:
     return dt_long
 
 def merge_df_list(df_list, key_columns:list[str], how:str) -> pd.DataFrame:
+    """
+        Recursively merge a dataframe list into one dataframe
+    """
     if len(df_list)==1:
         return df_list[0]
     x = []
