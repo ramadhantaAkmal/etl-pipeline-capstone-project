@@ -8,7 +8,7 @@ This project, completed by Mohamad Akmal Ramadhanta as part of the Purwadhika Sc
 - **Python**
 - **Pandas**
 
-## Project Structure
+## Contents
 - **Abstract**: Overview of the project and its objectives.
 - **Task Description**: Details of the ETL process and goals.
 - **Data Extraction Process**: Available in the [Jupyter Notebook](https://github.com/ramadhantaAkmal/etl-pipeline-capstone-project/blob/main/Extraction.ipynb).
