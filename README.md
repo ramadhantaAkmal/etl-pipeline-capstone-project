@@ -7,17 +7,24 @@ This project, completed by Mohamad Akmal Ramadhanta as part of the Purwadhika Sc
 ## Technology Used
 - **Python**
 - **Pandas**
+- **Shell Script**
+
+## Feature
+- **Multiple Data Extraction**
+- **Data Transformation from wide to long format**
+- **Dynamic Configuration of path and data sources**
+- **Scalable merge algorithm**
+- **System Process Logger**
 
 ## Contents
-- **Abstract**: Overview of the project and its objectives.
 - **Task Description**: Details of the ETL process and goals.
 - **Data Extraction Process**: Available in the [Jupyter Notebook](https://github.com/ramadhantaAkmal/etl-pipeline-capstone-project/blob/main/Extraction.ipynb).
 - **Data Transformation Process**: Available in the [Jupyter Notebook](https://github.com/ramadhantaAkmal/etl-pipeline-capstone-project/blob/main/Transformation.ipynb).
 - **Summary**: Key findings and outcomes.
 
-## Abstract
+## Task Description
 
-This project demonstrates the creation of an ETL pipeline to process multiple CSV datasets from Kaggle. Using Python and pandas, the data is cleaned, transformed, and consolidated into a single, analysis-ready CSV file. The exercise was conducted as part of the Purwadhika School Data Engineering curriculum.
+This project demonstrates the creation of an ETL pipeline to process multiple CSV datasets from Kaggle. Using Python and pandas, the data is cleaned, transformed, and consolidated into a single analysis-ready CSV file. All of the program process will be recorded into log files. The exercise was conducted as part of the Purwadhika School Data Engineering curriculum.
 
 ## Setup Instructions
 
@@ -34,7 +41,7 @@ This project demonstrates the creation of an ETL pipeline to process multiple CS
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/ramadhantaAkmal/etl-pipeline-capstone-project.git
    ```
 
 2. **Create and activate virtual environment:**
